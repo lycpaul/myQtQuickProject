@@ -5,12 +5,13 @@ import QtQuick.Controls 2.15
 ApplicationWindow {
     id: window
     visible: true
-    width: 640
-    height: 480
+    width: 1280
+    height: 720
     title: qsTr("Stack")
 
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
+//        contentHeight: 45
 
         ToolButton {
             id: toolButton
@@ -33,7 +34,7 @@ ApplicationWindow {
 
     Drawer {
         id: drawer
-        width: window.width * 0.66
+        width: window.width * 0.25
         height: window.height
 
         Column {

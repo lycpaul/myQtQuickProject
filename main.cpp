@@ -4,6 +4,7 @@
 int main(int argc, char *argv[])
 {
     qputenv("QT_IM_MODULE", QByteArray("qtvirtualkeyboard"));
+    qputenv("QT_SCALE_FACTOR", "0.5");
 
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 

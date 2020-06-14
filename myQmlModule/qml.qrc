@@ -6,4 +6,12 @@
         <file>Page2Form.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
     </qresource>
+
+    <qresource prefix="/">
+        <file>asserts/pepethefrog/feels_bad_pepe.png</file>
+        <file>asserts/pepethefrog/feels_good_pepe.png</file>
+        <file>asserts/pepethefrog/happy_pepe.png</file>
+        <file>asserts/pepethefrog/smug_pepe.png</file>
+        <file>asserts/iconfinder_setting.png</file>
+    </qresource>
 </RCC>

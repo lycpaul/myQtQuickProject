@@ -37,7 +37,7 @@ Project {
 
     Environment {
         QT_QUICK_CONTROLS_CONF: "qtquickcontrols2.conf"
-        QT_AUTO_SCREEN_SCALE_FACTOR: "1"
+        QT_AUTO_SCREEN_SCALE_FACTOR: "0.4"
     }
 
     /* List of plugin directories passed to QML runtime */
