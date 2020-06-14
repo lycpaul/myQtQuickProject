@@ -1,17 +1,17 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
+        <file>Main.qml</file>
         <file>HomeForm.ui.qml</file>
         <file>Page1Form.ui.qml</file>
         <file>Page2Form.ui.qml</file>
         <file>qtquickcontrols2.conf</file>
-    </qresource>
-
-    <qresource prefix="/">
         <file>asserts/pepethefrog/feels_bad_pepe.png</file>
         <file>asserts/pepethefrog/feels_good_pepe.png</file>
         <file>asserts/pepethefrog/happy_pepe.png</file>
         <file>asserts/pepethefrog/smug_pepe.png</file>
         <file>asserts/iconfinder_setting.png</file>
+        <file>Home.qml</file>
+        <file>imports/MyQmlModule/qmldir</file>
+        <file>imports/MyQmlModule/Constants.qml</file>
     </qresource>
 </RCC>

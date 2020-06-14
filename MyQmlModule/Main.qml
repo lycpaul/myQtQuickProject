@@ -1,6 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
-import MyModule 1.0
+//import MyQmlModule 1.0
 //import QtQuick.VirtualKeyboard 2.15
 
 ApplicationWindow {
@@ -8,7 +8,7 @@ ApplicationWindow {
     visible: true
     width: 1280
     height: 720
-    title: qsTr("Stack")
+    title: qsTr("MyQmlProject")
 
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
@@ -28,7 +28,7 @@ ApplicationWindow {
         }
 
         Label {
-            text: stackView.currentItem.title
+//            text: stackView.currentItem.title
             anchors.centerIn: parent
         }
     }
