@@ -14,13 +14,6 @@ Page {
         anchors.centerIn: parent
     }
 
-    Button {
-        id: button
-        x: 317
-        y: 168
-        text: qsTr("Button")
-    }
-
     BusyIndicator {
         id: busyIndicator
         x: 317
@@ -49,6 +42,13 @@ Page {
         width: 293
         height: 53
         value: 0.5
+
+        Connections {
+            target: intensitySlider
+            onMoved: {
+                progressBar.value = intensitySlider.value
+            }
+        }
     }
 
     SpinBox {
@@ -65,17 +65,6 @@ Page {
     }
 
     Image {
-        id: image1
-        x: 1134
-        y: 25
-        width: 100
-        height: 100
-        antialiasing: true
-        source: "asserts/iconfinder_setting.png"
-        fillMode: Image.PreserveAspectFit
-    }
-
-    Image {
         id: image
         x: 980
         y: 375
@@ -87,11 +76,87 @@ Page {
     }
 
     Slider {
-        id: slider
+        id: intensitySlider
         x: 317
         y: 568
         width: 325
         height: 46
         value: 0.5
+
+        Connections {
+            target: intensitySlider
+            onMoved: {
+                print("intensitySlider value changed", intensitySlider.value)
+            }
+        }
+    }
+
+    Button {
+        id: redButton
+        x: 317
+        y: 168
+        text: qsTr("Red")
+
+        Connections {
+            target: redButton
+            onClicked: {
+                print("redButton clicked")
+            }
+        }
+    }
+
+    Button {
+        id: greenButton
+        x: 464
+        y: 168
+        text: qsTr("Green")
+
+        Connections {
+            target: greenButton
+            onClicked: {
+                print("greenButton clicked")
+            }
+        }
+    }
+
+    Button {
+        id: blueButton
+        x: 618
+        y: 168
+        text: qsTr("Blue")
+
+        Connections {
+            target: blueButton
+            onClicked: {
+                print("blueButton clicked")
+            }
+        }
+    }
+
+    Button {
+        id: settingButton
+        x: 777
+        y: 168
+        text: qsTr("")
+        width: 100
+        height: 100
+
+        BorderImage {
+            id: name
+            source: "asserts/iconfinder_setting.png"
+            width: 100
+            height: 100
+            border.left: 0
+            border.top: 0
+            border.right: 0
+            border.bottom: 0
+        }
+
+        Connections {
+            target: settingButton
+            onClicked: {
+                print("settingButton clicked")
+            }
+        }
     }
 }
