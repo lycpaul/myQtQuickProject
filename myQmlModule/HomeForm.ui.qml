@@ -1,7 +1,9 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import MyModule 1.0
 
 Page {
+
     width: 1280
     height: 675
 
@@ -41,14 +43,8 @@ Page {
         y: 302
         width: 293
         height: 53
-        value: 0.5
-
-        Connections {
-            target: intensitySlider
-            onMoved: {
-                progressBar.value = intensitySlider.value
-            }
-        }
+        to: 1.0
+        value: intensitySlider.value/15
     }
 
     SpinBox {
@@ -81,12 +77,16 @@ Page {
         y: 568
         width: 325
         height: 46
-        value: 0.5
+        snapMode: Slider.SnapAlways
+        live: true
+        to: 15
+        stepSize: 1
+        value: 0
 
         Connections {
             target: intensitySlider
             onMoved: {
-                print("intensitySlider value changed", intensitySlider.value)
+                print("intensitySlider value: ", intensitySlider.value)
             }
         }
     }

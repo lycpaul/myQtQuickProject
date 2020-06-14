@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
+import MyModule 1.0
 //import QtQuick.VirtualKeyboard 2.15
 
 ApplicationWindow {
@@ -61,7 +62,7 @@ ApplicationWindow {
 
     StackView {
         id: stackView
-        initialItem: "HomeForm.ui.qml"
+        initialItem: "Home.qml"
         anchors.fill: parent
     }
 
